@@ -1,4 +1,4 @@
-# Novosco Tech Blog
+# Novosco CIO Blog
 
 ## Dependencies
 
@@ -83,7 +83,7 @@ The process to import these is currently manual, in a sense that you need to run
     rake sync_feeds
 
 Once the new feeds have been imported, it's worth checking the posts to make sure it looks ok, and adding a READMORE tag. Anything above READMORE will be shown in the blog summary, specifically as Featured Posts.  And as with any new post in the blog, commit it, push and deploy:
-    
+
     git commit -am "New blog posts synced"
     git push origin master
     middleman deploy

@@ -1,49 +1,4 @@
 {
-  "jimboefx": {
-    "name": "James Montgomery",
-    "slug":"james-montgomery",
-    "bio": "A passionate and sometimes obsessive problem solver who rants about predictable failures. Hates exceptions. Often found near coffee.",
-    "avatar": "avatars/james-montgomery.jpg",
-    "twitter": "jimboefx",
-    "twitter_widget_id": "385491692918296576",
-    "email": "james.montgomery@novosco.com"
-  },
-  "stejoh": {
-    "name": "Steven Johnston",
-    "slug":"steven-johnston",
-    "bio": "Tech lover and scripting addict. Focused on virtualisation, storage and data centre networking solutions. VMware / Cisco / EMC.",
-    "avatar": "avatars/steven-johnston.jpg",
-    "twitter": "stejoh",
-    "twitter_widget_id": "385487086326796288",
-    "email": "steven.johnston@novosco.com"
-  },
-  "alanmcburney": {
-    "name": "Alan McBurney",
-    "slug":"alan-mcburney",
-    "bio": "Solutions Architect @Novosco. Passionate about technology, delivering Microsoft centric solutions with emphasis on Lync, Exchange, PowerShell and Infrastructure.",
-    "avatar": "avatars/alan-mcburney.jpg",
-    "twitter": "alanmcburney",
-    "twitter_widget_id": "385491515964813313",
-    "email": "alan.mcburney@novosco.com"
-  },
-  "crod": {
-    "name": "Cláudio Rodrigues",
-    "slug":"claudio-rodrigues",
-    "bio": "TS, Citrix and VDI über geek. MVP and CTP, known in the industry for calling BS on the spot. Loves going for long drives on his amazing cars.",
-    "avatar": "avatars/claudio-rodrigues.jpg",
-    "twitter": "crod",
-    "twitter_widget_id": "385491271055179776",
-    "email": ""
-  },
-  "rainco": {
-    "name": "Colin Rainey",
-    "slug":"colin-rainey",
-    "bio": "Citrix Techie and IT enthusiast, delving into MDM and has been known to listen to the odd 80’s tune.",
-    "avatar": "avatars/colin-rainey.jpg",
-    "twitter": "rainco",
-    "twitter_widget_id": "395548794361626624",
-    "email": "colin.rainey@novosco.com"
-  },
   "novoscotechblog": {
     "name": "John Lennon",
     "slug":"john-lennon",
