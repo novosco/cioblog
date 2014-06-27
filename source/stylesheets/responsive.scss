@@ -1,0 +1,217 @@
+/* ==========================================================================
+    Responsive Styles
+   ========================================================================== */
+@import "base";
+
+@media only screen and (max-width: 920px) {
+
+ .articles {
+    float: left;
+    width: 100%;
+  }
+  .sidebar {
+    width: 100%;
+  }
+  .twitter {
+    height: 318px;
+    padding: 3% 23% 5% 23%;
+  }
+  #mc-email {
+    width: 62.5%;
+  }
+  .button {
+    width: 32.5%;
+  }
+
+  .banner {
+    margin: 60px 0 0 0;
+    padding: 5% 0 6% 0;
+    h1 {
+      font-size: 36px;
+      line-height: 36px;
+    }
+    h2 {
+      font-size: 18px;
+      line-height: 20px;
+      margin: 5px 0 0 0;
+    }
+  }
+  .articles-list li {
+    padding: 7.5% 0;
+    width: 100%;
+  }
+  .our-authors, .tag-cloud {
+    margin-top: 5%;
+  }
+  .authors-list {
+    li {
+      padding: 6% 0;
+      width: 100%;
+    }
+  }
+  .footer-info {
+    font-size: 15px;
+    line-height: 20px;
+    text-align: center;
+    height: auto;
+    padding: 30px 0;
+  }
+  .about-novosco {
+    width: 100%;
+  }
+  .copyright {
+    margin-top: 15px;
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  body {
+    header {
+      position: relative;
+      height: auto;
+      float: left;
+    }
+    .banner {
+      float: left;
+      margin: 0 0 5% 0;
+      width: 100%;
+      h2 {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 18px;
+      }
+    }
+    #post-main {
+      float: left;
+      padding-top: 8.5%;
+    }
+
+    #menu-button, #menu-items {
+      display: none;
+    }
+    #menu-button {
+      float: right;
+      display: block;
+      height: 60px;
+      line-height: 60px;
+      font-weight: 600;
+      padding: 0 0 0 20px;
+      font-size: 16px;
+      a:active {
+        top: 0;
+        position: none;
+      }
+      img {
+        margin: -3px 0 0 3px;
+      }
+    }
+    .header-nav nav ul{
+      margin: 0;
+      padding: 0;
+      float: none;
+      list-style: none;
+    }
+    .header-nav nav li{
+      width: 100%;
+      @include grey-border-bottom;
+      height: 49px;
+      line-height:50px;
+      a {
+        color: $black;
+      }
+      &:last-child {
+        border: none;
+      }
+      &:first-child {
+        @include grey-border-top;
+      }
+      &:hover, &:active {
+        background-color: $light-grey;
+      }
+    }
+  }
+}
+
+
+@media only screen and (max-width: 440px) {
+  body {
+    font-size: 15px;
+    line-height: 23px;
+  }
+  .article-header {
+    font-size: 30px;
+    line-height: 36px;
+  }
+  .post-meta {
+    font-size: 15px;
+  }
+  .newsletter {
+    height: 220px;
+  }
+
+  .newsletter-title {
+    text-align: center;
+    font-size: 21px;
+    width: 100%;
+    margin: 30px 0 30px 0;
+  }
+
+  #mc-email {
+    width: 90%;
+    height: 44px;
+    background-color: $light-grey;
+    line-height: 44px;
+    margin: 0;
+    padding: 0  5%;
+    font-size: 18px;
+  }
+  .button {
+    margin-top: 10px;
+    width: 100%;
+    float: left;
+    height: 44px;
+    line-height: 42px;
+    border: none;
+    font-size: 18px;
+  }
+  .post-nav {
+    width: 100%;
+    padding: 5% 0 0 0;
+  }
+  footer {
+    margin-top: 40px;
+  }
+  .post-header {
+    .article-header {
+      font-size: 30px;
+    }
+    .post-meta {
+      margin-bottom: 25px;
+      line-height: 26px;
+    }
+  }
+  #post-main {
+    padding-top: 95px;
+  }
+  .tags ol {
+    margin: 20px 0 0 0;
+  }
+  .banner {
+    .author-banner-name {
+      font-size: 25px;
+      line-height: 25px;
+      margin-bottom: 10px;
+    }
+    .author-banner-name {
+      font-size: 25px;
+      line-height: 25px;
+    }
+  }
+  .twitter {
+    height: 318px;
+    padding: 3% 4% 5% 4%;
+  }
+}
+
+

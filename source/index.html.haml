@@ -1,0 +1,23 @@
+.banner
+  .layout-wrapper
+    .layout-inner
+      %h1 The Datacentre Experts
+      %h2 A blog about infrastructure technology for VDI, storage, UC, datacentre and virtualisation nerds.
+
+.container
+
+  #main
+    .articles
+      %section.article-featured
+        %h1.small-box-title Featured Article
+        %article
+          = partial "shared/article_header", :locals => { :article => featured_article }
+          .body
+            = featured_article.summary
+            .read-more
+              = link_to "Read more...", featured_article, :class=>'read-more'
+      %section.articles-recent
+        %h1.small-h1 Recent Articles
+        = partial "shared/article_list", :locals => { :articles => blog.articles.drop(1) }
+
+    = partial "shared/sidebar"

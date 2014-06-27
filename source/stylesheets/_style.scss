@@ -1,0 +1,957 @@
+@charset "utf-8";
+
+@import "base";
+
+/*! HTML5 Boilerplate v4.3.0 | MIT License | http://h5bp.com/ */
+
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+body {
+  font-family: "myriad-pro",arial, sans-serif;
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 300;
+  color: $black;
+  word-wrap: break-word;
+}
+
+a:link, a:visited {
+  color: $link-color;
+  font-weight: 300;
+  text-decoration: none;
+  -webkit-transition: top .04s ease-in;
+}
+a:hover, a.hover {
+  color: $link-hover;
+  -webkit-transition: top .04s ease-out;
+}
+a:active {
+  color: $link-active;
+  position: relative;
+  top: 1px;
+}
+
+html,
+button,
+input,
+select,
+textarea {
+    color: #222;
+}
+
+
+/*
+ * Remove text-shadow in selection highlight: h5bp.com/i
+ * These selection rule sets have to be separate.
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+/*
+ * Remove the gap between images, videos, audio and canvas and the bottom of
+ * their containers: h5bp.com/i/440
+ */
+
+audio,
+canvas,
+img,
+video {
+    vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+    resize: vertical;
+}
+
+/* ==========================================================================
+   Browse Happy prompt
+   ========================================================================== */
+
+.browsehappy {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+
+
+header {
+  width: 100%;
+  background-color: $white;
+  background-image: -o-linear-gradient(94deg, rgba(255,255,255,0.04) 0%, rgba(226,226,226,0.04) 0%, rgba(0,0,0,0.04) 69%);
+  background-image: -moz-linear-gradient(94deg, rgba(255,255,255,0.04) 0%, rgba(226,226,226,0.04) 0%, rgba(0,0,0,0.04) 69%);
+  background-image: -webkit-linear-gradient(94deg, rgba(255,255,255,0.04) 0%, rgba(226,226,226,0.04) 0%, rgba(0,0,0,0.04) 69%);
+  background-image: -ms-linear-gradient(94deg, rgba(255,255,255,0.04) 0%, rgba(226,226,226,0.04) 0%, rgba(0,0,0,0.04) 69%);
+  background-image: linear-gradient(4deg, rgba(255,255,255,0.04) 0%, rgba(226,226,226,0.04) 0%, rgba(0,0,0,0.04) 69%);
+  height: 60px;
+  padding: 0;
+  position: fixed;
+  z-index: 1000;
+  top: 0;
+  -webkit-box-shadow: 2px 1px 0px 0px rgba(0, 0, 0, 0.15);
+  box-shadow: 2px 1px 0px 0px rgba(0, 0, 0, 0.15);
+}
+
+.layout-wrapper {
+  width: 92%;
+  margin: 0 4%;
+}
+
+.layout-inner {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+
+
+.logo {
+  display:block;
+  text-indent: -9999px;
+  background: inline-image("logo.svg") no-repeat;
+  width:224px;
+  height:29px;
+  margin:16px 0 15px 0;
+  position: relative;
+  float:left;
+  background-size: cover;
+}
+
+
+.header-nav {
+  height: 60px;
+}
+
+.header-nav nav ul{
+  margin: 0;
+  float: right;
+  list-style: none;
+}
+.header-nav nav li{
+  margin: 0 25px 0 0;
+
+  width: auto;
+  height: 60px;
+  line-height:60px;
+  font-size: 18px;
+  float:left;
+  @include link-states;
+  &:last-child {
+    margin-right: 0;
+  }
+  &:first-child {
+    margin-left: 0;
+  }
+}
+.header-nav nav a{
+  display: block;
+  font-weight: 300;
+  text-align: center;
+  text-decoration: none;
+  color: $grey;
+  &:active {
+    font-weight: 400;
+    color: $link-active;
+  }
+}
+
+.banner {
+  background-color: $black;
+  //-webkit-box-shadow: inset 2px 0 8px 1px rgba(0, 0, 0, 1);
+  //box-shadow: inset 2px 0 8px 1px rgba(0, 0, 0, 1);
+  height: auto;
+  margin: 60px 0 0 0;
+  padding: 48px 0 60px 0;
+  text-align: center;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+  background: #3D4247;
+  background-image: -o-linear-gradient(-90deg, rgba(255,255,255,0.06) 0%, rgba(0,0,0,0.10) 100%);
+  background-image: -moz-linear-gradient(-90deg, rgba(255,255,255,0.06) 0%, rgba(0,0,0,0.10) 100%);
+  background-image: -webkit-linear-gradient(-90deg, rgba(255,255,255,0.06) 0%, rgba(0,0,0,0.10) 100%);
+  background-image: -ms-linear-gradient(-90deg, rgba(255,255,255,0.06) 0%, rgba(0,0,0,0.10) 100%);
+  background-image: linear-gradient(-180deg, rgba(255,255,255,0.06) 0%, rgba(0,0,0,0.10) 100%);
+  -moz-box-shadow:    inset 0px 0px 5px 3px rgba(0,0,0,0.18);
+  -webkit-box-shadow: inset 0px 0px 5px 3px rgba(0,0,0,0.18);
+  box-shadow:         inset 0px 0px 5px 3px rgba(0,0,0,0.18);
+  h1 {
+    color: $white;
+    font-size: 56px;
+    font-weight: 100;
+    margin: 0;
+    padding: 0;
+    line-height: 56px;
+  }
+  h2 {
+    color: $grey;
+    font-size: 26px;
+    line-height: 30px;
+    font-weight: 100;
+    margin: 10px 0 0 0;
+    padding: 0;
+  }
+}
+.author-banner-avatar {
+  display: inline-block;
+  max-width: 88px;
+  max-height: 88px;
+  padding: 5px;
+  width: 22.2%;
+  margin-right: 3.75%;
+  background-image: -o-linear-gradient(133deg, rgba(255,255,255,0.10) 0%, rgba(226,226,226,0.10) 46%, rgba(0,0,0,0.10) 100%);
+  background-image: -moz-linear-gradient(133deg, rgba(255,255,255,0.10) 0%, rgba(226,226,226,0.10) 46%, rgba(0,0,0,0.10) 100%);
+  background-image: -webkit-linear-gradient(133deg, rgba(255,255,255,0.10) 0%, rgba(226,226,226,0.10) 46%, rgba(0,0,0,0.10) 100%);
+  background-image: -ms-linear-gradient(133deg, rgba(255,255,255,0.10) 0%, rgba(226,226,226,0.10) 46%, rgba(0,0,0,0.10) 100%);
+  background-image: linear-gradient(43deg, rgba(255,255,255,0.10) 0%, rgba(226,226,226,0.10) 46%, rgba(0,0,0,0.10) 100%);
+  border: 1px solid #2A2D31;
+  -moz-box-shadow:    0px 1px 4px 1px rgba(0,0,0,0.25);
+  -webkit-box-shadow: 0px 1px 4px 1px rgba(0,0,0,0.25);
+  box-shadow:         0px 1px 4px 1px rgba(0,0,0,0.25);
+  float: left;
+  img {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.author-banner-name, .author-banner-bio {
+  text-align: left;
+}
+
+
+
+.container {
+  width: 92%;
+  padding: 0 4%;
+  //margin-top: 60px;
+}
+
+#main {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 5% 0;
+}
+
+.articles {
+  float: left;
+  width: 60%;
+}
+
+.article-featured {
+  @include grey-border;
+  padding: 0 8% 8% 8%;
+  @include box-grey-gradient;
+  margin-bottom: 8%;
+
+  .small-box-title {
+    margin: -1px 0 6% 0;
+  }
+}
+
+.article-header {
+  margin: 0 0 5px 0;
+  font-size: 40px;
+  line-height: 48px;
+}
+
+.read-more {
+  a {
+    text-decoration: underline;
+    font-size: 21px;
+  }
+}
+
+.small-box-title {
+  font-size: 15px;
+  line-height: 20px;
+  font-weight: 600;
+  color: $white;
+  text-align: left;
+  width: auto;
+  display: inline-block;
+  margin: 0;
+  padding: 5px 15px;
+  background-color: $dark-blue;
+}
+
+
+.post-meta {
+  color: $grey;
+  height: 36px;
+  a {
+    text-decoration: underline;
+    color: $grey;
+  }
+  @include link-states;
+}
+
+.post-avatar {
+  width: 30px;
+  height: 30px;
+  padding: 2px;
+  float: left;
+  background-color: $white;
+  @include grey-border;
+  img {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.author-avatar {
+  display: inline-block;
+  max-width: 88px;
+  max-height: 88px;
+  padding: 1%;
+  width: 22.2%;
+  background-color: $white;
+  @include grey-border;
+  float: left;
+  img {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+
+.post-meta-text {
+  float: left;
+  line-height: 36px;
+  margin-left: 10px;
+}
+
+
+
+
+.articles-recent {
+  width: 100%;
+}
+
+.articles-list {
+  ol {
+    list-style-type: none;
+    padding: 0;
+    @include grey-border-top;
+  }
+  li {
+    padding: 7.5% 8%;
+    @include grey-border-dashed;
+    &:last-child {
+      border: 0;
+    }
+  }
+}
+
+.small-h1 {
+  font-size: 21px;
+  line-height: 25px;
+  font-weight: 600;
+}
+
+
+
+.sidebar {
+  float: right;
+  width: 33.333%;
+}
+
+.our-authors, .tag-cloud {
+  margin-top: 15%;
+}
+
+.authors-list {
+  ol {
+    list-style-type: none;
+    padding: 0;
+    @include grey-border-top;
+  }
+  li {
+    padding: 40px 20px;
+    display: inline-block;
+    @include grey-border-dashed;
+  }
+  h1 {
+    font-weight: 400;
+    line-height: 15px;
+    margin: 0 0 8px 0;;
+    font-size: 21px;
+  }
+}
+
+.author-avatar {
+  display: inline-block;
+  max-width: 88px;
+  max-height: 88px;
+  padding: 1%;
+  width: 22.2%;
+  background-color: $white;
+  @include grey-border;
+  float: left;
+  img {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.author-details {
+  float: left;
+  width: 70%;
+  margin-left: 5%;
+  font-size: 15px;
+  line-height: 20px;
+}
+
+.author-posts-link {
+  display: block;
+  font-size: 18px;
+  margin-top: 7px;
+  a {
+    text-decoration: underline;
+  }
+}
+
+
+.tag-list {
+  ol {
+    list-style-type: none;
+    @include grey-border-top;
+    padding: 40px 0 0 0 ;
+  }
+  li {
+    display: inline-block;
+  }
+}
+
+a.tag {
+    padding: 0 10px;
+    background-color: $tag-grey;
+    font-size: 15px;
+    line-height: 32px;
+    height: 32px;
+    margin: 0 0 5px 7px;
+    display: inline-block;
+    width: auto;
+    color: $white;
+    position: relative;
+    border-radius: 0;
+    font-weight: 600;
+    &:before {
+      content: "";
+      float: left;
+      position: absolute;
+      top: 0;
+      left: -8px;
+      width: 0;
+      height: 0;
+      border-color: transparent $tag-grey transparent transparent;
+      border-style: solid;
+      border-width: 16px 8px 16px 0;
+    }
+    &:hover:before {
+      border-color: transparent $grey transparent transparent;
+    }
+    &:active:before {
+      border-color: transparent $grey transparent transparent;
+    }
+    &:hover, .hover {
+      background: $grey;
+      -webkit-transition: top .04s ease-out;
+    }
+    &:active {
+      background: $black;
+      position: relative;
+      top: 1px;
+    }
+    &:active:before {
+      border-color: transparent $black transparent transparent;
+    }
+    &:active, .active {
+      background: $black;
+      -webkit-transition: top .04s ease-out;
+    }
+  }
+
+.post-nav {
+  width: 100%;
+  padding: 50px 0 40px 0;
+}
+.previous-post {
+  float: left;
+}
+
+.next-post {
+  float: right;
+}
+
+
+.latest-tweet {
+  background: $blue;
+  color: $white;
+  font-size: 15px;
+  line-height: 20px;
+  .tweet {
+    padding: 0 20px 2px 20px;
+  }
+  .follow {
+    background-color: $dark-blue;
+    width: auto;
+    height: 40px;
+    padding: 0 20px;
+    line-height: 40px;
+    .follow-text {
+      float: left;
+    }
+    .twitter-account a{
+      float: right;
+      color: white;
+      font-weight: 600;
+    }
+  }
+}
+
+.twitter {
+  color: $white;
+  background-color: $tag-grey;
+  height: 318px;
+  padding: 2px 10px 10px 10px;
+  //border: 1px solid $dark-border-grey;
+}
+
+
+footer {
+  float: left;
+  width: 100%;
+  margin-top: 60px;
+}
+
+
+.newsletter {
+  width: 100%;
+  height: 220px;
+  @include grey-border-top;
+}
+
+.newsletter-title {
+  font-weight: 600;
+  font-size: 30px;
+  width: 100%;
+  margin: 50px 0 20px 0;
+}
+
+#mc-email {
+  width: 78.75%;
+  float: left;
+  height: 58px;
+  background-color: $light-grey;
+  line-height: 58px;
+  margin: 0;
+  padding: 0 0 0 1.75%;
+  font-size: 21px;
+  @include grey-border;
+  @include light-text-shadow;
+}
+
+.button {
+  width: 17.5%;
+  font-weight: 600;
+  float: right;
+  background-color: $blue;
+  color: $white;
+  height: 60px;
+  line-height: 56px;
+  border: none;
+  font-size: 21px;
+  &:hover, &.hover {
+    background-color: $link-hover;
+    -webkit-transition: top .04s ease-out;
+  }
+  &:active {
+    background-color: $link-active;
+    position: relative;
+    top: 1px;
+  }
+}
+
+
+.footer-info {
+  width: 100%;
+  background-color: $black;
+  height: 60px;
+  padding: 0;
+  color: $white;
+  line-height: 60px;
+}
+
+
+.about-novosco {
+  float: left;
+}
+.copyright {
+  float: right;
+}
+
+
+
+
+
+.post-container {
+  width: 92%;
+  padding: 0 4%;
+  //margin-top: 60px;
+}
+
+#post-main {
+  max-width: 600px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 110px 0 0 0;
+}
+
+.post-header {
+  .article-header {
+    text-align: center;
+    font-size: 40px;
+  }
+  .post-avatar {
+    display: none;
+  }
+  .post-meta {
+    margin-bottom: 45px;
+  }
+  .post-meta-text {
+    margin: 0;
+    text-align: center;
+    float: none;
+  }
+  img {
+    width: 100%;
+  }
+  h1 {
+    font-size: 30px;
+  }
+  h2 {
+    font-size: 25px;
+  }
+  h3 {
+    font-size: 21px;
+  }
+  ul, ol {
+    margin: 20px 0 0 20px;
+    padding: 0;
+  }
+  ul ul, ol ol {
+    margin: 0 0 0 20px;
+  }
+  blockquote {
+    color: $grey;
+    font-size: 21px;
+    font-weight: 600;
+    font-style: italic;
+  }
+}
+
+.tags {
+  ol {
+    padding: 0;
+    margin: 40px 0 20px 0;
+    list-style-type: none;
+  }
+  li {
+    display: inline-block;
+  }
+}
+
+
+.post-author {
+  margin-top:20px;
+  padding: 6.5%;
+  background-color: $light-grey;
+  display: block;
+  @include grey-border;
+  h1 {
+    line-height: 15px;
+    margin: 0 0 8px 0;;
+    font-size: 21px;
+    a {
+      font-weight: 400;
+      color: $black;
+    }
+  }
+}
+
+
+.post-author-details {
+  float: left;
+  width: 70%;
+  font-weight: 300;
+  margin-left: 5%;
+  font-size: 15px;
+  line-height: 20px;
+}
+
+
+
+
+
+.post-author-header {
+  padding: 20px 0;
+  font-size: 21px !important;
+}
+
+
+.highlight {
+  padding: 15px 20px;
+  @include grey-border;
+  background-color: $light-grey;
+  font-size: 90%;
+  line-height: 120%;
+}
+
+
+
+#menu-button {
+  display: none;
+}
+
+
+
+
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Image replacement
+ */
+
+.ir {
+    background-color: transparent;
+    border: 0;
+    overflow: hidden;
+    /* IE 6/7 fallback */
+    *text-indent: -9999px;
+}
+
+.ir:before {
+    content: "";
+    display: block;
+    width: 0;
+    height: 150%;
+}
+
+/*
+ * Hide from both screenreaders and browsers: h5bp.com/u
+ */
+
+.hidden {
+    display: none !important;
+    visibility: hidden;
+}
+
+/*
+ * Hide only visually, but have it available for screenreaders: h5bp.com/v
+ */
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+/*
+ * Extends the .visuallyhidden class to allow the element to be focusable
+ * when navigated to via the keyboard: h5bp.com/p
+ */
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+/*
+ * Hide visually and from screenreaders, but maintain layout
+ */
+
+.invisible {
+    visibility: hidden;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+/*
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+
+.clearfix {
+    *zoom: 1;
+}
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+@media only screen and (min-width: 35em) {
+    /* Style adjustments for viewports that meet the condition */
+}
+
+@media print,
+       (-o-min-device-pixel-ratio: 5/4),
+       (-webkit-min-device-pixel-ratio: 1.25),
+       (min-resolution: 120dpi) {
+    /* Style adjustments for high resolution devices */
+}
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid required HTTP connection: h5bp.com/r
+   ========================================================================== */
+
+@media print {
+    * {
+        background: transparent !important;
+        color: #000 !important; /* Black prints faster: h5bp.com/s */
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    /*
+     * Don't show links for images, or javascript/internal links
+     */
+
+    .ir a:after,
+    a[href^="javascript:"]:after,
+    a[href^="#"]:after {
+        content: "";
+    }
+
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    thead {
+        display: table-header-group; /* h5bp.com/t */
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    img {
+        max-width: 100% !important;
+    }
+
+    @page {
+        margin: 0.5cm;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}

@@ -1,0 +1,23 @@
+- content_for :title do
+  #{author.name}
+
+.banner
+  .layout-wrapper
+    .layout-inner
+      .author-banner-avatar
+        = avatar_for author.twitter
+      %h1.author-banner-name= author.name
+      %h2.author-banner-bio= author.bio
+
+.container
+  #main
+    .articles
+      %section.articles-recent
+        %h1.small-h1 #{articles_by(author).size} Articles
+        = partial "shared/article_list", :locals => { :articles => articles_by(author) }
+
+    %aside.sidebar
+      %section.twitter
+        - if author.twitter_widget_id
+          = partial "shared/twitter_widget", :locals => {:twitter_id => author.twitter, :twitter_widget_id => author.twitter_widget_id}
+

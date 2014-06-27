@@ -1,0 +1,14 @@
+%header
+  .layout-wrapper
+    .layout-inner
+      = link_to "<span class='logo'>Novosco Tech Blog</span>".html_safe, "/"
+      .header-nav
+        %nav
+          %a#menu-button{:href => "#"}
+            MENU
+            %img{src: "/images/menu-triangle.png", :width => "11px"}/
+          %ul#menu-items
+            %li
+              = link_to  "Home", "http://novosco.com/"
+            %li
+              = link_to  "Tech Blog", "/", :class => "active"
