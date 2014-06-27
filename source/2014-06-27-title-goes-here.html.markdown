@@ -2,7 +2,7 @@
 title: Title-goes-here
 date: 2014-06-27 11:28 UTC
 tags: change
-author: novoscotechblog
+author: garyparkinson
 ---
 
 Today's IT departments are swamped with projects, changes, fixes, updates, patches, threats, compliance audits, tickets, reports, analytic's and licencing. Interestingly the breadth of devices and services in today's workplace has grown and continues to grow considerably. The convergence of all information technology is still happening and isn't due to stop or slow down anytime soon.
