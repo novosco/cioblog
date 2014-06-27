@@ -7,6 +7,15 @@
     "twitter": "novoscotechblog",
     "twitter_widget_id": "385489744718618624",
     "email": "john.lennon@novosco.com"
+  },
+  "garyparkinson": {
+    "name": "Gary Parkinson",
+    "slug":"gary-parkinson",
+    "bio": "",
+    "avatar": "avatars/steven-johnston.jpg",
+    "twitter": "garyparkinson",
+    "twitter_widget_id": "385489744718618624",
+    "email": "gary.parkinson@novosco.com"
   }
 }
 
