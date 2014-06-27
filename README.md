@@ -19,7 +19,7 @@ RVM (https://rvm.io) allows you to run multiple versions of Ruby.  .ruby-version
 This will install all gems required to run the app.
 
     gem install bundler
-    cd novoscoeng
+    cd novoscocioblog
     bundle install
 
 ## Development
